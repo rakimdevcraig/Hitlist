@@ -39,40 +39,47 @@ function AddJob({ setJobs }) {
   }
 
   return (
-    <div>
-      <h1>Add a Job to the list</h1>
+    <div className='form'>
+      <h1 class='form-title'>Add a Job</h1>
       <form onSubmit={addJob}>
         <input
+          className='input'
           name='role'
           value={role}
           placeholder='Job Role'
           onChange={(e) => setRole(e.target.value)}
         />
         <input
+          className='input'
           name='company'
           value={company}
           placeholder='Add Company'
           onChange={(e) => setCompany(e.target.value)}
         />
         <input
+          className='input'
           name='remote'
           value={remote}
           placeholder='Remote'
           onChange={(e) => setRemote(e.target.value)}
         />
         <input
+          className='input'
           name='Salary'
           value={salary}
           placeholder='Salary'
           onChange={(e) => setSalary(e.target.value)}
         />
         <input
+          className='input'
           name='location'
           value={location}
           placeholder='Location'
           onChange={(e) => setLocation(e.target.value)}
         />
-        <button type='submit'>Add Job</button>
+        <button className='form-btn' type='submit'>
+          Add Job
+        </button>
       </form>
     </div>
   )

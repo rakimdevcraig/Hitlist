@@ -20,26 +20,34 @@ function Joblistings({ jobs, setJobs }) {
     jobFilterText === ''
       ? jobs
       : jobs.filter((job) =>
-          job.role.toLowerCase().includes(jobFilterText.toLowerCase())
+          job.company.toLowerCase().includes(jobFilterText.toLowerCase())
         )
 
   return (
     <div>
-      <ul>
-        <input
-          name='filter'
-          value={jobFilterText}
-          placeholder='Filter Jobs'
-          onChange={(e) => setJobfilTerText(e.target.value)}
-        />
+      <input
+        className='filter'
+        name='filter'
+        value={jobFilterText}
+        placeholder='Filter Jobs By Company'
+        onChange={(e) => setJobfilTerText(e.target.value)}
+      />
+      <ul className='jobList-grid'>
         {jobsToShow.map((job) => (
-          <li key={job.id}>
-            {job.role}
-            {job.company}
-            {job.remote}
-            {job.salary}
-            {job.location}
-            <button onClick={() => deleteJob(job.id)}>Delete</button>
+          <li className='joblist-card' key={job.id}>
+            <h2>{job.role}</h2>
+            <p>{job.company}</p>
+            <p>{job.remote}</p>
+            <p>{job.salary}</p>
+            <div className='joblist-card-bottom'>
+              <p>{job.location}</p>
+              <button
+                className='joblist-card-btn'
+                onClick={() => deleteJob(job.id)}
+              >
+                Delete
+              </button>
+            </div>
           </li>
         ))}
       </ul>

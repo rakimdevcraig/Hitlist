@@ -1,68 +1,111 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* background-color: #f5f5f5; */
+  background-color: aliceblue;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Form styling */
+
+.form {
+  margin: 4rem auto;
+  max-width: 600px;
+  background-color: white;
+  padding: 1.5rem;
+  /* border: 1px solid black; */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.form-title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid gainsboro;
+  font-size: 1.2rem;
+}
+
+.form-btn {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: dodgerblue;
+  color: white;
+  border: 1px solid dodgerblue;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.2s ease-in;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.form-btn:hover {
+  background-color: #007efc;
+}
+
+/* Filter */
+
+.filter {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid gainsboro;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+}
+
+.filter::placeholder {
+  text-align: center;
+}
+
+/* Joblist Styles */
+
+.jobList-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.joblist-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid gainsboro;
+  padding: 1rem;
+}
+
+.joblist-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.joblist-card-btn {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  transition: background-color 0.2s ease-in;
+}
+
+.joblist-card-btn:hover {
+  background-color: #e00202;
 }

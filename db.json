@@ -1,60 +1,76 @@
 {
   "jobs": [
     {
-      "id": "1",
-      "role": "Front-End Developer",
-      "company": "Amazon",
-      "remote": "Hybrid",
-      "salary": "100k",
-      "location": "Boston"
-    },
-    {
-      "id": "2",
-      "role": "Full-Stack Engineer",
+      "id": "125",
+      "role": "Full-Stack Engineer ",
       "company": "Vercel",
-      "remote": "Remote",
-      "salary": "105k",
-      "location": "Philadelphia"
+      "remote": "Hybrid",
+      "salary": "200k",
+      "location": "Philadelphia, Pa"
     },
     {
-      "id": "3",
+      "id": "21",
+      "role": "Full-Stack Engineer",
+      "company": "Microsoft",
+      "remote": "Hybrid",
+      "salary": "150k",
+      "location": "Redwood, Wa"
+    },
+    {
+      "id": "71",
       "role": "Back-End Engineer",
       "company": "Google",
-      "remote": "Remote",
-      "salary": "90k",
-      "location": "New York"
-    },
-    {
-      "id": "4",
-      "role": "Full-Stack Engineer",
-      "company": "Apple",
-      "remote": "In-Office",
+      "remote": "Hybrid",
       "salary": "120k",
-      "location": "Boston"
+      "location": "Miami, Fl"
     },
     {
-      "id": "67",
-      "role": "front end",
-      "company": "ovo",
-      "remote": "remote",
-      "salary": "500",
-      "location": "uconn"
+      "id": "20",
+      "role": "Front-End Developer",
+      "company": "Mozilla",
+      "remote": "Remote",
+      "salary": "175k",
+      "location": "San Francisco, Ca"
     },
     {
-      "id": "120",
-      "role": "front end",
-      "company": "chrome",
-      "remote": "remote",
-      "salary": "$5",
-      "location": "boston"
+      "id": "110",
+      "role": "Front-End Developer",
+      "company": "Apple",
+      "remote": "Remote",
+      "salary": "200k",
+      "location": "Los Angeles, Ca"
     },
     {
-      "id": "146",
-      "role": "front end",
-      "company": "wordpress",
-      "remote": "hybrid",
-      "salary": "100k",
-      "location": "boston"
+      "id": "24",
+      "role": "Front-End Developer",
+      "company": "Vercel",
+      "remote": "Remote",
+      "salary": "135k",
+      "location": "Atlanta, Ga"
+    },
+    {
+      "id": "26",
+      "role": "Back-End Developer",
+      "company": "Spotify",
+      "remote": "In-Office",
+      "salary": "175k",
+      "location": "Munich, De"
+    },
+    {
+      "id": "46",
+      "role": "Back-End Developer",
+      "company": "Google",
+      "remote": "In-Office",
+      "salary": "165k",
+      "location": "Jacksonville, Fl"
+    },
+    {
+      "id": "28",
+      "role": "Backend Developer",
+      "company": "Microsoft",
+      "remote": "In-Office",
+      "salary": "235k",
+      "location": "New York, Ny"
     }
   ]
 }
