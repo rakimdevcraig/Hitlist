@@ -1,10 +1,19 @@
 import React, { useState } from 'react'
+import jobsServices from '../services/jobsServices'
 
 function Joblistings({ jobs, setJobs }) {
   const [jobFilterText, setJobfilTerText] = useState('')
 
   function deleteJob(id) {
-    setJobs(jobs.filter((job) => job.id !== id))
+    jobsServices
+      .remove(id)
+      .then((response) => {
+        console.log('job has been deleted')
+        setJobs(jobs.filter((job) => job.id !== id))
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 
   const jobsToShow =

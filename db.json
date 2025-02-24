@@ -1,0 +1,60 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "role": "Front-End Developer",
+      "company": "Amazon",
+      "remote": "Hybrid",
+      "salary": "100k",
+      "location": "Boston"
+    },
+    {
+      "id": "2",
+      "role": "Full-Stack Engineer",
+      "company": "Vercel",
+      "remote": "Remote",
+      "salary": "105k",
+      "location": "Philadelphia"
+    },
+    {
+      "id": "3",
+      "role": "Back-End Engineer",
+      "company": "Google",
+      "remote": "Remote",
+      "salary": "90k",
+      "location": "New York"
+    },
+    {
+      "id": "4",
+      "role": "Full-Stack Engineer",
+      "company": "Apple",
+      "remote": "In-Office",
+      "salary": "120k",
+      "location": "Boston"
+    },
+    {
+      "id": "67",
+      "role": "front end",
+      "company": "ovo",
+      "remote": "remote",
+      "salary": "500",
+      "location": "uconn"
+    },
+    {
+      "id": "120",
+      "role": "front end",
+      "company": "chrome",
+      "remote": "remote",
+      "salary": "$5",
+      "location": "boston"
+    },
+    {
+      "id": "146",
+      "role": "front end",
+      "company": "wordpress",
+      "remote": "hybrid",
+      "salary": "100k",
+      "location": "boston"
+    }
+  ]
+}

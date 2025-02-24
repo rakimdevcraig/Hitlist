@@ -1,26 +1,23 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import AddJob from './components/AddJob'
 import Joblistings from './components/joblistings'
+import jobsServices from './services/jobsServices'
+
 function App() {
-  const [count, setCount] = useState(0)
-  const [jobs, setJobs] = useState([
-    {
-      id: 1,
-      role: 'Front End Developer',
-      company: 'Amazon',
-      remote: 'hybrid',
-      salary: '100k',
-      location: 'boston',
-    },
-    {
-      id: 2,
-      role: 'Full-Stack Engineer',
-      company: 'Ebay',
-      remote: 'remote',
-      salary: '80k',
-      location: 'philly',
-    },
-  ])
+  const [jobs, setJobs] = useState([])
+
+  const hook = () => {
+    jobsServices
+      .getAll()
+      .then((response) => {
+        setJobs(response)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
+  useEffect(hook, [])
 
   return (
     <>

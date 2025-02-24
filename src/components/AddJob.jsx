@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import jobsServices from '../services/jobsServices'
 
 function AddJob({ setJobs }) {
   const [role, setRole] = useState('')
@@ -8,7 +9,7 @@ function AddJob({ setJobs }) {
   const [location, setLocation] = useState('')
 
   function randomId() {
-    return Math.floor(Math.random() * (200 - 4) + 4)
+    return Math.floor(Math.random() * (200 - 4) + 4).toString()
   }
 
   function addJob(e) {
@@ -21,12 +22,20 @@ function AddJob({ setJobs }) {
       salary: salary,
       location: location,
     }
-    setJobs((prevJobs) => [...prevJobs, job])
-    setRole('')
-    setCompany('')
-    setRemote('')
-    setSalary('')
-    setLocation('')
+    jobsServices
+      .create(job)
+      .then((response) => {
+        console.log(response)
+        setJobs((prevJobs) => [...prevJobs, response])
+        setRole('')
+        setCompany('')
+        setRemote('')
+        setSalary('')
+        setLocation('')
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 
   return (
